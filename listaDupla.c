@@ -91,3 +91,30 @@ void destroiLista(ListaDupla l) {
   free(l);
 }
 
+  void menorelemento(ListaDupla l){
+     int menor= l->head;
+     link aux = NULL;
+     link t = l->head;
+    while ( t != l->z ) {
+      if(t->item < menor){
+      menor = t->item;
+      aux = t;
+    }
+    t = t->next
+  }
+  return aux;
+}
+
+  void ordenaelemento(ListaDupla l){
+     link t = l->head;
+    for (t != l->z) {
+      if(t->item < menor){
+      menor = t->item;
+      aux = t;
+    }
+    t = t->next
+  }
+  return aux;
+}
+
+
